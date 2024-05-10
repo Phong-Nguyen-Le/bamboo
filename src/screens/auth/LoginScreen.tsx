@@ -21,9 +21,12 @@ import { useAuth } from '@contexts/AuthContext'
 import CustomButton from '@components/CustomButton'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import Toast, { ToastProps } from 'react-native-toast-message'
+import { useNavigation } from '@react-navigation/native'
+import { ROUTE_NAME } from '@navigation/routeName'
 
 const LoginScreen = () => {
   const { top } = useSafeAreaInsets()
+  const { navigate } = useNavigation<any>()
   const [userInput, setUserInput] = React.useState({
     username: 'admin',
     password: '123456'
@@ -142,6 +145,8 @@ const LoginScreen = () => {
         <Text
           style={{
             textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
             fontSize: 15,
             fontWeight: '500',
             color: COLORS.black,
@@ -149,14 +154,18 @@ const LoginScreen = () => {
             marginTop: 100
           }}>
           Chưa có tài khoản?{' '}
-          <Text
-            style={{
-              textDecorationLine: 'underline',
-              color: COLORS.primary,
-              fontStyle: 'normal'
-            }}>
-            Đăng ký tại đây!
-          </Text>
+          <TouchableOpacity
+            style={{}}
+            onPress={() => navigate(ROUTE_NAME.SignUp)}>
+            <Text
+              style={{
+                textDecorationLine: 'underline',
+                color: COLORS.primary,
+                fontStyle: 'normal'
+              }}>
+              Đăng ký tại đây!
+            </Text>
+          </TouchableOpacity>
         </Text>
       </View>
     </SafeAreaView>

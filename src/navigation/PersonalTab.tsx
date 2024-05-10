@@ -12,6 +12,8 @@ import LikeWorkerScreen from '@screens/common/personal/LikeWorkerScreen'
 import Row from '@components/Row'
 import { Text } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import HeaderAnimation from '@screens/common/personal/HeaderAnimation'
+import TestScreen from '@screens/common/personal/TestScreen'
 
 const Stack = createStackNavigator()
 const PersonalTab = ({ navigation, route }: any) => {
@@ -79,6 +81,31 @@ const PersonalTab = ({ navigation, route }: any) => {
             backgroundColor: COLORS.backgroundSecondary
           },
           headerTintColor: COLORS.white
+        }}
+      />
+
+      <Stack.Screen
+        name={ROUTE_NAME.TestScreen}
+        component={TestScreen}
+        options={{
+          title: 'React Native Pan Gesture',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            color: COLORS.white
+          },
+          headerStyle: {
+            backgroundColor: COLORS.backgroundSecondary
+          },
+          headerTintColor: COLORS.white
+        }}
+      />
+
+      <Stack.Screen
+        name={ROUTE_NAME.HeaderAnimation}
+        component={HeaderAnimation}
+        options={{
+          headerShown: false
         }}
       />
     </Stack.Navigator>

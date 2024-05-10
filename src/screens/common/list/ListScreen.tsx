@@ -5,7 +5,7 @@ import COLORS from '@constants/colors'
 import moment from 'moment'
 import useUserPagination from 'hooks/useUserPagination'
 import useUserStore from 'stores/useUserStore'
-import CustomImage from '@components/CustomImage'
+// import CustomImage from '@components/CustomImage'
 import Row from '@components/Row'
 import GlobalStyles from '@constants/globalStyles'
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 const UserCard = ({ item }) => {
   return (
     <TouchableOpacity style={styles.itemContainer}>
-      <CustomImage
+      {/* <CustomImage
         containerStyle={{
           width: 100,
           height: 100
@@ -89,7 +89,7 @@ const UserCard = ({ item }) => {
         source={{
           uri: `https://i.pravatar.cc/${100 + item.id}`
         }}
-      />
+      /> */}
       <View style={{ flex: 1 }}>
         <View
           style={{

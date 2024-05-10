@@ -6,6 +6,8 @@ import ForgotPasswordScreen from '@screens/auth/ForgotPasswordScreen'
 import LoginScreen from '@screens/auth/LoginScreen'
 import { StatusBar } from 'react-native'
 import DrawerNavigator from './DrawerNavigator'
+import { ROUTE_NAME } from './routeName'
+import SignUp from '@screens/auth/SignUp'
 
 const Stack = createNativeStackNavigator<any>()
 function screenTracking(state: NavigationState | undefined): void {
@@ -42,12 +44,16 @@ const ChildNavigation = () => {
 
       <Stack.Screen
         name='ForgotPasswordScreen'
-        options={
-          {
-            // header: props => <CustomHeader {...props} title="Quên mật khẩu" />,
-          }
-        }
+        options={{}}
         component={ForgotPasswordScreen}
+      />
+      <Stack.Screen
+        name={ROUTE_NAME.SignUp}
+        options={{
+          headerBackTitleVisible: false,
+          headerTitle: 'Đăng ký tài khoản'
+        }}
+        component={SignUp}
       />
     </Stack.Navigator>
   )

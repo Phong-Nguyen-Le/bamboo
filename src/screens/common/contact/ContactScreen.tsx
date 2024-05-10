@@ -4,7 +4,9 @@ import {
   Text,
   View,
   ScrollView,
-  TouchableOpacity
+  TouchableOpacity,
+  Alert,
+  Linking
 } from 'react-native'
 import React from 'react'
 import Row from '@components/Row'
@@ -17,6 +19,23 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import LinearGradient from 'react-native-linear-gradient'
 
 const ContactScreen = () => {
+  const phoneNumber = '1900-3007'
+  const handleCallPress = () => {
+    Alert.alert(
+      'Call Confirmation',
+      `Do you want to call ${phoneNumber}?`,
+      [
+        {
+          text: 'Cancel',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel'
+        },
+        { text: 'Call', onPress: () => Linking.openURL(`tel:${phoneNumber}`) }
+      ],
+      { cancelable: false }
+    )
+  }
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
       <ScrollView contentContainerStyle={{ flex: 1 }}>
@@ -157,6 +176,7 @@ const ContactScreen = () => {
         </View>
 
         <TouchableOpacity
+          onPress={handleCallPress}
           style={{ position: 'absolute', bottom: 20, right: 20 }}>
           <LinearGradient
             colors={['#c7ffba', '#25c700', '#0f4b00']}

@@ -16,7 +16,18 @@ const COLORS = {
   blueDark: '#0f00a4',
 
   backgroundPrimary: '#cdffcf',
-  backgroundSecondary: '#008708'
+  backgroundSecondary: '#008708',
+
+
+   // Text styles
+   titleText: '#333333',
+   subtitleText: '#666666',
+   bodyText: '#000000',
+   captionText: '#999999',
+
+
+
+   
 }
 
 export default COLORS

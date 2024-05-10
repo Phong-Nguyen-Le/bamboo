@@ -88,6 +88,34 @@ const PersonalScreen = () => {
           </View>
           <Entypo name='chevron-right' color={COLORS.primary} size={20} />
         </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => navigate(ROUTE_NAME.HeaderAnimation)}
+          style={{
+            ...styles.button
+          }}>
+          <View style={styles.icon}>
+            <Entypo name='message' color={COLORS.primary} size={25} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.buttonTitle}>Header Animation</Text>
+          </View>
+          <Entypo name='chevron-right' color={COLORS.primary} size={20} />
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => navigate(ROUTE_NAME.TestScreen)}
+          style={{
+            ...styles.button
+          }}>
+          <View style={styles.icon}>
+            <Entypo name='message' color={COLORS.primary} size={25} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.buttonTitle}>React Native Pan Gesture</Text>
+          </View>
+          <Entypo name='chevron-right' color={COLORS.primary} size={20} />
+        </TouchableOpacity>
       </View>
 
       <TouchableOpacity

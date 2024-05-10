@@ -9,5 +9,10 @@ export const ROUTE_NAME = {
   ContactScreen: 'ContactScreen',
   PersonalScreen: 'PersonalScreen',
   UpdateInfo: 'UpdateInfo',
-  UpdatePassword: 'UpdatePassword'
+  UpdatePassword: 'UpdatePassword',
+  TestScreen: 'TestScreen',
+  
+  SignUp: 'SignUp',
+
+  HeaderAnimation: 'Header Animation'
 }

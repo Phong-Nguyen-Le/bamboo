@@ -5,5 +5,7 @@ export default {
 
   auth_reset_password: '',
 
-  user_pagination: '/users'
+  user_pagination: '/users',
+
+  bank_select_box: '/v2/banks'
 }
