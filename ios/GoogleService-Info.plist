@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDHXJfqacTEo-FjEYwTM4I6RQHjH2NDuaw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>443348601160</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bambooship</string>
+	<key>PROJECT_ID</key>
+	<string>fir-notifee-47998</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-notifee-47998.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:443348601160:ios:7918a893a2e3f9df7c8b7d</string>
+</dict>
+</plist>

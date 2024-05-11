@@ -1,4 +1,11 @@
-import { FlatList, Image, StyleSheet, Text, View } from 'react-native'
+import {
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity
+} from 'react-native'
 import React from 'react'
 import useBankSelectBox from 'hooks/useBankSelectBox'
 import BottomSheet from './BottomSheet'
@@ -9,7 +16,7 @@ type ItemProps = { item: any }
 
 const Item = ({ data }: { data: ItemProps }) => {
   return (
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item}>
       <Image
         source={{ uri: data?.item?.logo }}
         style={{ width: 100, height: 50 }}
@@ -19,7 +26,7 @@ const Item = ({ data }: { data: ItemProps }) => {
         <Text style={styles.title}>{data?.item?.shortName}</Text>
         <Text style={styles.subTitle}>{data?.item?.name}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   )
 }
 

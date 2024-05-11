@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "443348601160",
+    "project_id": "fir-notifee-47998",
+    "storage_bucket": "fir-notifee-47998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443348601160:android:ce5ce193ad363df77c8b7d",
+        "android_client_info": {
+          "package_name": "com.bambooship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443348601160-e5de77cgrpa6j694ojlrq6nmdeqvv61n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv5HNStatlquC-YOmfKT2QqSXJlDrs2tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443348601160-e5de77cgrpa6j694ojlrq6nmdeqvv61n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
